@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color & Font Picker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body id="body">
+    <h1 class="heading"><i>COLOR & FONT PICKER</i></h1>
+    <div class="container">
+        <div id="container1">
+            <div id="text_box">
+                <h2 contenteditable="true" id="type_here" style="font-weight: 500;"></h2>
+            </div>
+            <button id="download">Download</button>
+        </div>
+        <div id="container2">
+            <div id="sub_container1">
+                <div id="div1">
+                    <h3 class="bgcolor_heading"><i>BACKGROUND-COLOR</i></h3>
+                    <div id="colors1">
+                        <div class="bgcolors" id="bgcolor1" style="background-color: red;"></div>
+                        <div class="bgcolors" id="bgcolor2" style="background-color: green;"></div>
+                        <div class="bgcolors" id="bgcolor3" style="background-color: rgb(255, 0, 149);"></div>
+                        <div class="bgcolors" id="bgcolor4" style="background-color: mediumvioletred;"></div>
+                        <div class="bgcolors" id="bgcolor5" style="background-color: blue;"></div>
+                        <div class="bgcolors" id="bgcolor6" style="background-color: skyblue;"></div>
+                        <div class="bgcolors" id="bgcolor7" style="background-color: salmon;"></div>
+                        <div class="bgcolors" id="bgcolor8" style="background-color: violet;"></div>
+                        <div class="bgcolors" id="bgcolor9" style="background-color: yellow;"></div>
+                        <div class="bgcolors" id="bgcolor10" style="background-color: yellowgreen;"></div>
+                        <div class="bgcolors" id="bgcolor11" style="background-color: royalblue;"></div>
+                        <div class="bgcolors" id="bgcolor12" style="background-color: tomato;"></div>
+                        <div class="bgcolors" id="bgcolor13" style="background-color: teal;"></div>
+                        <div class="bgcolors" id="bgcolor14" style="background-color: turquoise;"></div>
+                        <div class="bgcolors" id="bgcolor15" style="background-color: indigo;"></div>
+                        <div class="bgcolors" id="bgcolor16" style="background-color: orange;"></div>
+                        <div class="bgcolors" id="bgcolor17" style="background-color: slategrey;"></div>
+                        <div class="bgcolors" id="bgcolor18" style="background-color: darkcyan;"></div>
+                        <div class="bgcolors" id="bgcolor19" style="background-color: darkblue;"></div>
+                        <div class="bgcolors" id="bgcolor20" style="background-color: firebrick;"></div>
+                        <div class="bgcolors" id="bgcolor21" style="background-color: greenyellow;"></div>
+                        <div class="bgcolors" id="bgcolor22" style="background-color: hotpink;"></div>
+                        <div class="bgcolors" id="bgcolor23" style="background-color: blueviolet;"></div>
+                        <div class="bgcolors" id="bgcolor24" style="background-color: navy;"></div>
+                        <div class="bgcolors" id="bgcolor25" style="background-color: mediumturquoise;"></div>
+                        <div class="bgcolors" id="bgcolor26" style="background-color: red;"></div>
+                        <div class="bgcolors" id="bgcolor27" style="background-color: rgb(255, 85, 85);"></div>
+                        <div class="bgcolors" id="bgcolor28" style="background-color: rgb(255, 180, 180);"></div>
+                        <div class="bgcolors" id="bgcolor29" style="background-color: rgb(255, 159, 225);"></div>
+                        <div class="bgcolors" id="bgcolor30" style="background-color: rgb(82, 82, 82);"></div>
+                    </div>
+                </div>
+                <div id="div2">
+                    <h3 class="color_heading"><i>TEXT-COLOR</i></h3>
+                    <div id="colors2">
+                        <div class="colors" id="color1" style="background-color: red;"></div>
+                        <div class="colors" id="color2" style="background-color: green;"></div>
+                        <div class="colors" id="color3" style="background-color: rgb(255, 0, 149);"></div>
+                        <div class="colors" id="color4" style="background-color: mediumvioletred;"></div>
+                        <div class="colors" id="color5" style="background-color: blue;"></div>
+                        <div class="colors" id="color6" style="background-color: skyblue;"></div>
+                        <div class="colors" id="color7" style="background-color: salmon;"></div>
+                        <div class="colors" id="color8" style="background-color: violet;"></div>
+                        <div class="colors" id="color9" style="background-color: yellow;"></div>
+                        <div class="colors" id="color10" style="background-color: yellowgreen;"></div>
+                        <div class="colors" id="color11" style="background-color: royalblue;"></div>
+                        <div class="colors" id="color12" style="background-color: tomato;"></div>
+                        <div class="colors" id="color13" style="background-color: teal;"></div>
+                        <div class="colors" id="color14" style="background-color: turquoise;"></div>
+                        <div class="colors" id="color15" style="background-color: indigo;"></div>
+                        <div class="colors" id="color16" style="background-color: orange;"></div>
+                        <div class="colors" id="color17" style="background-color: slategrey;"></div>
+                        <div class="colors" id="color18" style="background-color: darkcyan;"></div>
+                        <div class="colors" id="color19" style="background-color: darkblue;"></div>
+                        <div class="colors" id="color20" style="background-color: firebrick;"></div>
+                        <div class="colors" id="color21" style="background-color: greenyellow;"></div>
+                        <div class="colors" id="color22" style="background-color: hotpink;"></div>
+                        <div class="colors" id="color23" style="background-color: blueviolet;"></div>
+                        <div class="colors" id="color24" style="background-color: navy;"></div>
+                        <div class="colors" id="color25" style="background-color: mediumturquoise;"></div>
+                        <div class="colors" id="color26" style="background-color: red;"></div>
+                        <div class="colors" id="color27" style="background-color: rgb(255, 85, 85);"></div>
+                        <div class="colors" id="color28" style="background-color: rgb(255, 180, 180);"></div>
+                        <div class="colors" id="color29" style="background-color: rgb(255, 159, 225);"></div>
+                        <div class="colors" id="color30" style="background-color: rgb(82, 82, 82);"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="sub_container2">
+                <div id="div3">
+                    <h3 class="font_heading"><i>FONT-STYLES</i></h3>
+                    <div class="font_style"><h3 id="style1" style="text-align: center; font-family: 'Times New Roman', Times, serif;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style2" style="text-align: center; font-family: Roboto;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style3" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style4" style="text-align: center; font-family: cursive;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style5" style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style6" style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style7" style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style8" style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style9" style="text-align: center; font-family: serif;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style10" style="text-align: center; font-family: sans-serif;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style11" style="text-align: center; font-family: Arial;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style12" style="text-align: center; font-family: Courier;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style13" style="text-align: center; font-family: Helvetica;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style14" style="text-align: center; font-family: Verdana;">Hello</h3></div>
+                    <div class="font_style"><h3 id="style15" style="text-align: center; font-family: Times;">Hello</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
